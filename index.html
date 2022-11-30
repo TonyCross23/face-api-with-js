@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Face Dected</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            video {
+                border: 1px solid black;
+            }
+
+            canvas {
+                position: absolute;
+                width: 720px;
+                height: 540px;
+            }
+        </style>
+    </head>
+    <body>
+         <video id="video" width="720px" height="540px" autoplay muted></video>
+         <script defer src="face-api.min.js"></script>
+        <script defer src="script.js"></script>
+    </body>
+</html>
